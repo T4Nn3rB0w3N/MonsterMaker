@@ -15,6 +15,7 @@ public class MonsterController
 		//Job 1: initialize data members!
 		// put param.s in paren.s
 		myMonster = new MarshmallowMonster("Thelmo", 4, 4, true, 3);
+		
 	}
 	
 	//methods section
@@ -27,5 +28,12 @@ public class MonsterController
 		//make a new monster and customize from user input!
 		//u make a new instance when you call a constructor
 		MarshmallowMonster userMonster;
+		userMonster = new MarshmallowMonster();
+		
+	}
+	private void userMonster()
+	{
+		System.out.println("What up! Make your monster!");
+		
 	}
 }
