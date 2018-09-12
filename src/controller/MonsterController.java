@@ -2,6 +2,8 @@ package controller;
 
 import model.MarshmallowMonster;
 
+import java.util.Scanner;
+
 public class MonsterController
 {
 	//Data member section
@@ -17,7 +19,13 @@ public class MonsterController
 	
 	//methods section
 	public void start()
-	{
+	{			
 		System.out.println(myMonster);
+		myMonster.setArmCount(9999);
+		System.out.println("My monster has this many arms: " + myMonster.getArmCount());
+		
+		//make a new monster and customize from user input!
+		//u make a new instance when you call a constructor
+		MarshmallowMonster userMonster;
 	}
 }
