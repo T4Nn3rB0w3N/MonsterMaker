@@ -9,12 +9,14 @@ public class MonsterController
 	//Data member section
 	private MarshmallowMonster myMonster;
 	
+	private MarshmallowMonster userMonster;
 	//Constructor section
 	public MonsterController() //this is a default constructor
 	{
 		//Job 1: initialize data members!
 		// put param.s in paren.s
 		myMonster = new MarshmallowMonster("Thelmo", 4, 4, true, 3);
+		
 		
 	}
 	
@@ -38,11 +40,57 @@ public class MonsterController
 		//Make a new monster and customize from user input
 		MarshmallowMonster userMonster;
 		String userMonsterName = JOptionPane.showInputDialog(null, "What is your monster's name?");
+		userMonster.setName(userMonsterName);
+		String userNumberArms = JOptionPane.showInputDialog(null, "How many arms?");
+		String userNumberLegs = JOptionPane.showInputDialog(null, "How many legs?");
+		if (validInt(userNumberArms))
+		{
+			int arms = Integer.parseInt(userNumberArms);
+			userMonster.setArmCount(arms);
+		}
 		
+		if (validDouble(userNumberLegs))
+		{
+			double legs = Double.parseDouble(userNumberLegs);
+			userMonster.setLegCount(legs);
+		}
 	}
-	private void userMonster()
+	public boolean validInt(String maybeInt)
 	{
-		System.out.println("What up! Make your monster!");
+		boolean isValid = false;
+		try
+		{
+			Integer.parseInt(maybeInt);
+			isValid = true;
+		}
+		catch(NumberFormatExcetpion error)
+		{
+			JOptionPane.showMessageDialog(null,  "You should type a integer value like -12345");
+		}
 		
+		return isValid;
 	}
+	
+	public boolean validDouble(String maybeDouble)
+	{
+		boolean isValid = false;
+		
+		try
+		{
+			Double.parseDouble(maybeDouble);
+			isValid = true;
+		}
+		catch(BumberFormatException error)
+		{
+			JOptionPane.showMessageDialog(null, "This requires a double value aka something with a . >)");
+		}
+		
+		
+		return isValid;
+	}
+	
+	
+	
+	
+	
 }
