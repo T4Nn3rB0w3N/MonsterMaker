@@ -2,6 +2,8 @@ package controller;
 
 import model.MarshmallowMonster;
 
+import model.UserMonster;
+
 import javax.swing.JOptionPane;
 
 public class MonsterController
@@ -9,7 +11,7 @@ public class MonsterController
 	//Data member section
 	private MarshmallowMonster myMonster;
 	
-	private MarshmallowMonster userMonster;
+	private UserMonster userMonster;
 	//Constructor section
 	public MonsterController() //this is a default constructor
 	{
@@ -38,7 +40,6 @@ public class MonsterController
 		
 		JOptionPane.showMessageDialog(null,  "Let's make you a monster!!!!!!!!!");
 		//Make a new monster and customize from user input
-		MarshmallowMonster userMonster;
 		String userMonsterName = JOptionPane.showInputDialog(null, "What is your monster's name?");
 		userMonster.setName(userMonsterName);
 		String userNumberArms = JOptionPane.showInputDialog(null, "How many arms?");
