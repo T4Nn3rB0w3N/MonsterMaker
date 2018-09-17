@@ -64,7 +64,7 @@ public class MonsterController
 			Integer.parseInt(maybeInt);
 			isValid = true;
 		}
-		catch(NumberFormatExcetpion error)
+		catch(NumberFormatException error)
 		{
 			JOptionPane.showMessageDialog(null,  "You should type a integer value like -12345");
 		}
@@ -81,7 +81,7 @@ public class MonsterController
 			Double.parseDouble(maybeDouble);
 			isValid = true;
 		}
-		catch(BumberFormatException error)
+		catch(NumberFormatException error)
 		{
 			JOptionPane.showMessageDialog(null, "This requires a double value aka something with a . >)");
 		}
