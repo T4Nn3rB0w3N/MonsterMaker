@@ -19,7 +19,7 @@ public class MonsterController
 		// put param.s in paren.s
 		myMonster = new MarshmallowMonster("Thelmo", 4, 4, true, 3);
 		
-		
+		userMonster = new UserMonster();
 	}
 	
 	//methods section
@@ -29,15 +29,18 @@ public class MonsterController
 		//Use this method instead of: System.out.println("words")
 		
 		
-		
+		//----------Marshmallow Monster--------------
 		System.out.println(myMonster);
 		JOptionPane.showMessageDialog(null, myMonster);
 		myMonster.setArmCount(9999);
 		System.out.println("My monster has this many arms: " + myMonster.getArmCount());
 		JOptionPane.showMessageDialog(null,  "My monster has this many arms: " + myMonster.getArmCount());
+		//------------------END------------------------
+		
 		//make a new monster and customize from user input!
 		//u make a new instance when you call a constructor
 		
+		//----------------User Monster-------------------
 		JOptionPane.showMessageDialog(null,  "Let's make you a monster!!!!!!!!!");
 		//Make a new monster and customize from user input
 		String userMonsterName = JOptionPane.showInputDialog(null, "What is your monster's name?");

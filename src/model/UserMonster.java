@@ -25,6 +25,7 @@ public class UserMonster
 	//-------GETTERS---------
 	public String getName()
 	{
+		
 		return name;
 	}
 	
