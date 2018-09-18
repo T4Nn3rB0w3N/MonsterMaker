@@ -37,7 +37,8 @@ public class MarshmallowMonster
 	public String getName()
 	{
 		return name;
-		// return is an exit method, any code after it is never hit.
+		// return is an exit method, any code after it is never hit. It ends the method, or procedure
+		//procedures MUST give back a value
 		//put return after all code
 	}
 	
